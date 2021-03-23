@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{574B716D-F6E1-4270-8840-68175F8E1372}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tech.Cluee.Blazor.XAgent", "Main\Tech.Cluee.XAgent\Tech.Cluee.Blazor.XAgent.csproj", "{16ADC26A-CE06-4A0C-8426-BC558D1FC99D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16ADC26A-CE06-4A0C-8426-BC558D1FC99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16ADC26A-CE06-4A0C-8426-BC558D1FC99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16ADC26A-CE06-4A0C-8426-BC558D1FC99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16ADC26A-CE06-4A0C-8426-BC558D1FC99D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16ADC26A-CE06-4A0C-8426-BC558D1FC99D} = {574B716D-F6E1-4270-8840-68175F8E1372}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15BBA482-8692-4257-9F05-4B6748F8AF87}
+	EndGlobalSection
+EndGlobal
