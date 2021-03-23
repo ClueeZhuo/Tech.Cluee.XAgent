@@ -1,4 +1,4 @@
-﻿namespace Tech.Cluee.Blazor.XAgent
+﻿namespace Tech.Cluee.XAgent
 {
     internal class Program
     {

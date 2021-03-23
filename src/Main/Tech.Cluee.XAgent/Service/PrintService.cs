@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 
-namespace Tech.Cluee.Blazor.XAgent
+namespace Tech.Cluee.XAgent
 {
     public class PrintService : ServiceBase
     {

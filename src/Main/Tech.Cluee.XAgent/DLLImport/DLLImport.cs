@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Security.Principal;
 using System.Text;
 
-namespace Tech.Cluee.Blazor.XAgent
+namespace Tech.Cluee.XAgent
 {
     public class DLLImport
     {

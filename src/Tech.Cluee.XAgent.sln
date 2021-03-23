@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{574B716D-F6E1-4270-8840-68175F8E1372}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tech.Cluee.Blazor.XAgent", "Main\Tech.Cluee.XAgent\Tech.Cluee.Blazor.XAgent.csproj", "{16ADC26A-CE06-4A0C-8426-BC558D1FC99D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tech.Cluee.XAgent", "Main\Tech.Cluee.XAgent\Tech.Cluee.XAgent.csproj", "{16ADC26A-CE06-4A0C-8426-BC558D1FC99D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

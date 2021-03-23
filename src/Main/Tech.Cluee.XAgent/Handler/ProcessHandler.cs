@@ -6,7 +6,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tech.Cluee.Blazor.XAgent
+namespace Tech.Cluee.XAgent
 {
     public class ProcessHandler
     {
