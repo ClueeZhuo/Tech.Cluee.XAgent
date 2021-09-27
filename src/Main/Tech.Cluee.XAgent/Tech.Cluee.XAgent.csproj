@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="NewLife.Agent" Version="8.7.2021.204" />
-    <PackageReference Include="NewLife.Core" Version="8.10.2021.505" />
+    <PackageReference Include="NewLife.Agent" Version="8.7.2021.708" />
+    <PackageReference Include="NewLife.Core" Version="8.11.2021.809" />
     <PackageReference Include="SmartThreadPool.NetCore" Version="2.3.0" />
     <PackageReference Include="System.Security.Principal.Windows" Version="5.0.0" />
   </ItemGroup>

@@ -31,8 +31,8 @@ namespace Tech.Cluee.XAgent
             // 一般在构造函数里面指定服务名
             ServiceName = "PrintAgent";
 
-            DisplayName = "新生命服务代理";
-            Description = "用于承载各种服务的服务代理！";
+            DisplayName = "PrintAgent";
+            Description = "PrintAgent！";
 
             Setting set = Setting.Current;
 
@@ -54,9 +54,9 @@ namespace Tech.Cluee.XAgent
 
             //_Timer = new TimerX(DoWork, null, 5_000, 60_000) { Async = true };
 
-            _Timer = new TimerX(DoWork, reason, "0/5 * * * * ?") { Async = true };
+            //_Timer = new TimerX(DoWork, reason, "0/5 * * * * ?") { Async = true };
 
-            //_DaemonTimer = new TimerX(DoScannWork, reason, "0/10 * * * * ?") { Async = true };
+            _DaemonTimer = new TimerX(DoScannWork, reason, "0/10 * * * * ?") { Async = true };
 
             //_DaemonTimer = new TimerX(DoScannWork, reason, 10_000, 24 * 3600 * 1000) { Async = true };
             // 5秒开始，每60秒执行一次
