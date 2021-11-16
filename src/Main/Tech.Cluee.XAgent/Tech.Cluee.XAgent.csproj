@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>Tech.Cluee.XAgent</AssemblyName>
     <RootNamespace>Tech.Cluee.XAgent</RootNamespace>
   </PropertyGroup>
@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="NewLife.Agent" Version="8.7.2021.708" />
-    <PackageReference Include="NewLife.Core" Version="8.11.2021.809" />
+    <PackageReference Include="NewLife.Agent" Version="8.8.2021.1109" />
+    <PackageReference Include="NewLife.Core" Version="8.11.2021.1109" />
     <PackageReference Include="SmartThreadPool.NetCore" Version="2.3.0" />
     <PackageReference Include="System.Security.Principal.Windows" Version="5.0.0" />
   </ItemGroup>

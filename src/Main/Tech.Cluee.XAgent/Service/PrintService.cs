@@ -11,10 +11,14 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading;
 
+using Tech.Cluee.XAgent.Actors;
+
 namespace Tech.Cluee.XAgent
 {
     public class PrintService : ServiceBase
     {
+        public static bool IsWorking = false;
+
         #region 属性/字段
 
         private readonly string[] _processAddress;
@@ -36,7 +40,7 @@ namespace Tech.Cluee.XAgent
 
             Setting set = Setting.Current;
 
-            _processAddress = set.WatchDog.Split(','); ;
+            _processAddress = set.WatchDog?.Split(','); ;
         }
         #endregion
 
@@ -54,9 +58,9 @@ namespace Tech.Cluee.XAgent
 
             //_Timer = new TimerX(DoWork, null, 5_000, 60_000) { Async = true };
 
-            //_Timer = new TimerX(DoWork, reason, "0/5 * * * * ?") { Async = true };
+            _Timer = new TimerX(DoWork, reason, "0/5 * * * * ?") { Async = true };
 
-            _DaemonTimer = new TimerX(DoScannWork, reason, "0/10 * * * * ?") { Async = true };
+            //_DaemonTimer = new TimerX(DoScannWork, reason, "0/10 * * * * ?") { Async = true };
 
             //_DaemonTimer = new TimerX(DoScannWork, reason, 10_000, 24 * 3600 * 1000) { Async = true };
             // 5秒开始，每60秒执行一次
@@ -66,11 +70,24 @@ namespace Tech.Cluee.XAgent
 
         private void DoWork(Object state)
         {
-            WriteLog($"*********{state}**********");
-
             XTrace.WriteLine("定时任务-S");
 
-            Thread.Sleep(15000);
+            if (IsWorking)
+            {
+                XTrace.WriteLine("ISWORKING");
+            }
+            else
+            {
+                HelloActor actor = new HelloActor();
+
+                XTrace.WriteLine("TELLING");
+                actor.Tell("GO");
+                XTrace.WriteLine("TELLED");
+
+                XTrace.WriteLine("STOPING");
+                XTrace.WriteLine(actor.Stop().ToString());
+                XTrace.WriteLine("STOPED");
+            }
 
             XTrace.WriteLine("定时任务-E");
         }
