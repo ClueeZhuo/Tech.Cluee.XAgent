@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Tech.Cluee.XAgent
 {
+
     public class ProcessHandler
     {
         private readonly Process _process;
