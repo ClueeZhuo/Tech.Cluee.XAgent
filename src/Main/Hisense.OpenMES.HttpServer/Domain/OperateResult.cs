@@ -4,12 +4,12 @@
     /// 处理相应业务返回结果
     /// </summary>
     [Serializable]
-    public class OperateResult
+    internal class OperateResult
     {
         /// <summary>
         /// 操作结果构造函数
         /// </summary>
-        public OperateResult()
+        internal OperateResult()
         {
 
         }
@@ -19,7 +19,7 @@
         /// </summary>
         /// <param name="status">操作状态</param>
         /// <param name="Message">提示信息</param>
-        public OperateResult(OperateStatusEnum status, string Message)
+        internal OperateResult(OperateStatusEnum status, string Message)
         {
             this.Status = status;
             this.Message = Message;
@@ -31,7 +31,7 @@
         /// <param name="status">操作状态</param>
         /// <param name="Message">提示信息</param>
         /// <param name="businessDetail">业务信息</param>
-        public OperateResult(OperateStatusEnum status, string Message, string businessDetail)
+        internal OperateResult(OperateStatusEnum status, string Message, string businessDetail)
         {
             this.Status = status;
             this.Message = Message;
@@ -41,22 +41,22 @@
         /// <summary>
         /// 处理结果
         /// </summary>
-        public OperateStatusEnum Status { get; set; }
+        internal OperateStatusEnum Status { get; set; }
 
         /// <summary>
         /// 处理业务信息/错误信息
         /// </summary>
-        public string Message { get; set; }
+        internal string Message { get; set; }
 
         /// <summary>
         /// 处理业务结果
         /// </summary>
-        public object Result { get; set; }
+        internal object Result { get; set; }
 
         /// <summary>
         /// 操作结果返回信息
         /// </summary>
-        public string BusinessDetail { get; set; }
+        internal string BusinessDetail { get; set; }
 
         #region 操作结果
 
@@ -65,7 +65,7 @@
         /// </summary>
         /// <param name="message">提示信息</param>
         /// <returns></returns>
-        public static OperateResult None(string message = "无数据")
+        internal static OperateResult None(string message = "无数据")
         {
             return new OperateResult()
             {
@@ -79,7 +79,7 @@
         /// </summary>
         /// <param name="message">提示信息</param>
         /// <returns></returns>
-        public static OperateResult Success(string message = "操作成功")
+        internal static OperateResult Success(string message = "操作成功")
         {
             return new OperateResult()
             {
@@ -93,7 +93,7 @@
         /// </summary>
         /// <param name="result">业务结果</param>
         /// <returns></returns>
-        public static OperateResult Success<T>(T result)
+        internal static OperateResult Success<T>(T result)
         {
             return new OperateResult()
             {
@@ -107,7 +107,7 @@
         /// </summary>
         /// <param name="message">提示信息</param>
         /// <returns></returns>
-        public static OperateResult Failed(string message = "操作失败")
+        internal static OperateResult Failed(string message = "操作失败")
         {
             return new OperateResult()
             {
@@ -121,7 +121,7 @@
         /// </summary>
         /// <param name="message">提示信息</param>
         /// <returns></returns>
-        public static OperateResult Unknown(string message = "操作结果未知")
+        internal static OperateResult Unknown(string message = "操作结果未知")
         {
             return new OperateResult()
             {

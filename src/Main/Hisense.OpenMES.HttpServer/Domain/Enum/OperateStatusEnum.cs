@@ -5,7 +5,7 @@ namespace Hisense.OpenMES.HttpServer
     /// <summary>
     /// 逻辑业务处理状态
     /// </summary>
-    public enum OperateStatusEnum
+    internal enum OperateStatusEnum
     {
         /// <summary>
         /// 不作任何业务处理=0

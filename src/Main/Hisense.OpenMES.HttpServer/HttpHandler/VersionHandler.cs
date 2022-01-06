@@ -4,7 +4,7 @@ using NewLife.Serialization;
 
 namespace Hisense.OpenMES.HttpServer
 {
-    internal class AutoUpdateHandler : IHttpHandler
+    internal class VersionHandler : IHttpHandler
     {
         public void ProcessRequest(IHttpContext context)
         {

@@ -2,14 +2,14 @@
 
 namespace Hisense.OpenMES.HttpServer
 {
-    public class HttpService
+    internal class HttpService
     {
-        public HttpService()
+        internal HttpService()
         {
 
         }
 
-        public void DoWork(Object state)
+        internal void DoWork(Object state)
         {
             try
             {
@@ -24,7 +24,8 @@ namespace Hisense.OpenMES.HttpServer
                     SessionLog = XTrace.Log
                 };
                 server.Map("/", () => $@"<h1>HttpServer is running ~ {DateTime.Now.ToFullString()}</h1>");
-                server.Map("/autoupdate", new AutoUpdateHandler());
+                server.Map("/Version", new VersionHandler());
+                server.Map("/AutoUpdate", new AutoUpdateHandler());
                 server.Start();
 
                 Console.ReadLine();
@@ -35,4 +36,6 @@ namespace Hisense.OpenMES.HttpServer
             }
         }
     }
+
+  
 }

@@ -2,7 +2,7 @@
 using NewLife.Log;
 using NewLife.Threading;
 
-public class AgentService : ServiceBase
+internal class AgentService : ServiceBase
 {
     #region 属性
     #endregion
@@ -11,7 +11,7 @@ public class AgentService : ServiceBase
     /// <summary>
     /// 
     /// </summary>
-    public AgentService()
+    internal AgentService()
     {
         ServiceName = "OpenMES.HttpServer-Agent";
 

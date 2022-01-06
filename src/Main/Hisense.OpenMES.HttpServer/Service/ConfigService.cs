@@ -5,7 +5,7 @@ namespace Hisense.OpenMES.HttpServer
     /// <summary>
     /// 配置服务
     /// </summary>
-    public static class ConfigService
+    internal static class ConfigService
     {
         /// <summary>
         /// 通用获取配置类
@@ -33,7 +33,7 @@ namespace Hisense.OpenMES.HttpServer
         /// <summary>
         /// 登录类型
         /// </summary>
-        public static int ServerPort
+        internal static int ServerPort
         {
             get
             {
