@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{574B716D-F6E1-4270-8840-68175F8E1372}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tech.Cluee.XAgent", "Main\Tech.Cluee.XAgent\Tech.Cluee.XAgent.csproj", "{16ADC26A-CE06-4A0C-8426-BC558D1FC99D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{0E7ACCCA-0524-49E3-9B33-F007B02BA6E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hisense.OpenMES.HttpServer", "Main\Hisense.OpenMES.HttpServer\Hisense.OpenMES.HttpServer.csproj", "{52B9911E-B9F7-4AEA-BD11-0020DBB7F499}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,17 +19,17 @@ Global
 		{16ADC26A-CE06-4A0C-8426-BC558D1FC99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16ADC26A-CE06-4A0C-8426-BC558D1FC99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16ADC26A-CE06-4A0C-8426-BC558D1FC99D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E7ACCCA-0524-49E3-9B33-F007B02BA6E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E7ACCCA-0524-49E3-9B33-F007B02BA6E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E7ACCCA-0524-49E3-9B33-F007B02BA6E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E7ACCCA-0524-49E3-9B33-F007B02BA6E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B9911E-B9F7-4AEA-BD11-0020DBB7F499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B9911E-B9F7-4AEA-BD11-0020DBB7F499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B9911E-B9F7-4AEA-BD11-0020DBB7F499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B9911E-B9F7-4AEA-BD11-0020DBB7F499}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{16ADC26A-CE06-4A0C-8426-BC558D1FC99D} = {574B716D-F6E1-4270-8840-68175F8E1372}
-		{0E7ACCCA-0524-49E3-9B33-F007B02BA6E4} = {574B716D-F6E1-4270-8840-68175F8E1372}
+		{52B9911E-B9F7-4AEA-BD11-0020DBB7F499} = {574B716D-F6E1-4270-8840-68175F8E1372}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15BBA482-8692-4257-9F05-4B6748F8AF87}

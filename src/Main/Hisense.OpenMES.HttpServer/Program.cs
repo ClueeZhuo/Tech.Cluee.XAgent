@@ -1,0 +1,1 @@
+﻿new AgentService().Main(args);
